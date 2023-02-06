@@ -28,7 +28,7 @@ const getAllProducts = async (req, res) => {
     console.log(req.query.type);
     const types = req.query.type;
     let products;
-    if(types.empty())
+    if(!types)
     {
         products = await Product.findAll({});
     }
