@@ -11,7 +11,7 @@ app.use(cors());
 app.get('/ping',()=>{
     res.send("-pong");
 })
-const PORT = 8080
+const PORT = 5000
 app.listen(PORT,()=>{
     console.log(`Server running on port no. ${PORT}`);
 })
