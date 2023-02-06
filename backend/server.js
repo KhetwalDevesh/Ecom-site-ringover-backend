@@ -9,7 +9,7 @@ app.use(cors());
 res.header( "Access-Control-Allow-Origin" );
 // app.use('/api/products',router);
 app.get('/ping',()=>{
-    res.send("pong");
+    res.send("-pong");
 })
 const PORT = 8080
 app.listen(PORT,()=>{
